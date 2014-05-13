@@ -8,7 +8,19 @@
 </head>
 <body>
 
-<%= yield %>
-
+<!--if you want to put something at the top of every page, put it here, like so: -->
+  <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container">
+        <a href="#" class="navbar-brand">Treehouse</a>
+        <ul class="nav navbar-nav">
+          <li><%= link_to "All Statuses", statuses_path %></li>
+    </div>
+  </div>
+  <div class="container">
+    <%= yield %> <!--places the body of the page here-->
+<!-- same for bottom of every page -->
+    <h6><em>Bottom o the Page to Ya</em></h6>
+  </div>
 </body>
 </html>
+
